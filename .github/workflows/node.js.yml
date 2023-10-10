@@ -39,7 +39,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd ~/home/ubuntu/Mob_Coder
+          cd /home/ubuntu/Mob_Coder
           git pull origin main
           npm install --production
           pm2 restart node-app
